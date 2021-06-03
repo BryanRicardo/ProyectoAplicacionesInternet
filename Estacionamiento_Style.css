@@ -1,0 +1,38 @@
+body
+{
+    background-color: #825017;
+}
+
+.est
+{
+    background: url('Imagen3.png'); 
+    width: 100%; height: 100%; 
+    background-size: 100% 100%;
+}
+
+.est.td
+{
+    width: 14.29%; 
+    height: 16.67%;
+}
+
+.tblest
+{
+    display: inline-block;
+    width: 61%; 
+    height: 100%;
+    margin-top: -190px; 
+    margin-bottom: -70px;
+}
+
+.corte
+{
+    display: inline-block; 
+    width: 38%;
+}
+
+.Opciones
+{
+    margin-bottom: 10px; 
+    /*border:solid 1px black;*/
+}

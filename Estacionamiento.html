@@ -1,0 +1,109 @@
+<html>
+    <head>
+        <title>Estacionamiento</title>
+        <script type="text/javascript" src="GUI.js"></script>
+        <link rel="stylesheet" href="GUI.css">
+    </head>
+    <body onload=startTime() ">
+        <!--<img src="idea.png" height="5%" style="display: inline-block;"/>-->
+        <h2>Hora: <span id="info"></span></h2>
+        <!--<div style="margin-bottom: -180px;">-->
+            <table class="Opciones">
+                <tr>
+                    <td>Matricula</td>
+                    <td><input type="text" id="mat" name="mat" maxlength="9"/></td>
+                    <td><input type="radio" id="rbIn" name="op" checked="true" onclick="Entrada()"/></td>
+                    <td>Entrada</td>
+                </tr>
+                <tr>
+                    <td>Modelo</td>
+                    <td> <input type="text" id="mod" name="mod"/></td>
+                    <td><input type="radio" id="rbOut" name="op" onclick="Salida()"/></td>
+                    <td>Salida</td>
+                </tr>
+                <tr>
+                    <td>Cajón</td>
+                    <td><input type="text" id="box" name="box" readonly="true"/></td>
+                    <td><input type="radio" id="rbCut" name="op"/></td>
+                    <td>Corte</td>
+                </tr>
+                <tr>
+                    <td id="time">Hora entrada:</td>
+                    <td><input type="text" id="hora" name="hora" readonly="true"/></td>
+                    <td></td>
+                    <td><input type="button" id="rbIn" name="op" value="Ejecutar" onclick="Ejec()"/></td>
+                </tr>
+                <tr>
+                    <td>Total $ </td>
+                    <td><input type="text" id="tot" name="tot" readonly="true"/></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        <!--</div>-->
+        
+       <div class="corte"> <textarea id="tbxCut" name="tbxCut" rows="22" cols="70" readonly="true" style="resize:none; width: 100%;"></textarea> </div>
+
+        <div class="tblest">
+            <table class="est">
+                <tr style="border-collapse: separate;">
+                    <td></td>
+                    <td id="A8" style="background-color: rgba(0,255,0, 0.5);"></td>
+                    <td id="A7" style="background-color: rgba(0,255,0, 0.5);"></td>
+                    <td id="A6" style="background-color: rgba(0,255,0, 0.5);"></td>
+                    <td id="A5" style="background-color: rgba(0,255,0, 0.5);"></td>
+                    <td id="A4" style="background-color: rgba(0,255,0, 0.5);"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td</td>
+                </tr>
+                <tr>
+                    <td id="B1" style="background-color: rgba(0,255,0, 0.5);"></td>
+                    <td></td>
+                    <td id="C4" style="background-color: rgba(0,255,0, 0.5);"></td>
+                    <td></td>
+                    <td id="C3" style="background-color: rgba(0,255,0, 0.5);"></td>
+                    <td></td>
+                    <td id="A3" style="background-color: rgba(0,255,0, 0.5);"></td>
+                </tr>
+                <tr>
+                    <td id="B2" style="background-color: rgba(0,255,0, 0.5);"></td>
+                    <td ></td>
+                    <td id="C5" style="background-color: rgba(0,255,0, 0.5);"></td>
+                    <td ></td>
+                    <td id="C2" style="background-color: rgba(0,255,0, 0.5);"></td>
+                    <td ></td>
+                    <td id="A2" style="background-color: rgba(0,255,0, 0.5);"></td>
+                </tr>
+                <tr>
+                    <td id="B3" style="background-color: rgba(0,255,0, 0.5);"></td>
+                    <td></td>
+                    <td id="C6" style="background-color: rgba(0,255,0, 0.5);"></td>
+                    <td></td>
+                    <td id="C1" style="background-color: rgba(0,255,0, 0.5);"></td>
+                    <td></td>
+                    <td id="A1" style="background-color: rgba(0,255,0, 0.5);"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+           </div>
+
+           <h6 style="margin-top: 41px;">2021 Bryan Ricardo Cervantes Mancera</h6>
+       
+    </body>
+</html>
